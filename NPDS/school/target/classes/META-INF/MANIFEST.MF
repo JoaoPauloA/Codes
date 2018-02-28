@@ -1,10 +1,10 @@
 Manifest-Version: 1.0
-Built-By: aluno
-Build-Jdk: 9.0.1
 Implementation-Title: school
 Implementation-Version: 0.0.1-SNAPSHOT
+Built-By: joaopaulo
 Implementation-Vendor-Id: br.ufc.crateus
-Implementation-Vendor: Pivotal Software, Inc.
+Build-Jdk: 1.8.0_161
 Implementation-URL: http://projects.spring.io/spring-boot/school/
 Created-By: Maven Integration for Eclipse
+Implementation-Vendor: Pivotal Software, Inc.
 

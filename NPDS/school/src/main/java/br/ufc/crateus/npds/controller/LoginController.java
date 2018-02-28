@@ -1,6 +1,8 @@
 package br.ufc.crateus.npds.controller;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -16,9 +18,11 @@ public class LoginController {
 	private LoginService ur;
 
 	@RequestMapping(method = RequestMethod.POST)
-	public void addUsuario(@RequestBody Usuario usuario) {
-		ur.putUser(usuario);
-
+	public ResponseEntity<Usuario> autentica(@RequestBody Usuario usuario) {
+		Usuario u = ur.verificaLogin(usuario.getUserName(), usuario.getUserPassword());
+		if (u != null)
+			return new ResponseEntity<Usuario>(u, HttpStatus.OK);
+		return new ResponseEntity<Usuario>(u, HttpStatus.UNAUTHORIZED);
 	}
-	
+
 }
