@@ -8,4 +8,8 @@
 	2.2 git config --list
 
 3-MESCLANDO PROJETOS
-	1.3 git remote add nome_do_repositorio_remoto endereço_http 
+	1.1 git remote add nome_do_repositorio_remoto endereço_http 
+	1.2 git pull codes master
+	1.3 git add nome_dos_arquivos 
+	1.4 git commit -m "comentário"
+	1.5 git push nome_do_repositório master
