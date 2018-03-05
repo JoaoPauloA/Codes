@@ -1,0 +1,35 @@
+QUESTÕES
+1 -  Seja a seguinte seqüência de instruções 
+    int i=10, j=20;
+    int *pti, *ptj;
+    pti = &i;
+    ptj = &j;
+Qual expressão não é válida?
+	   	a. 	j = pti == ptj;
+    	b. 	i = pti-ptj; 
+    	c. 	pti += ptj;
+    	d. 	pti++; 
+    	e. 	i = pti || ptj;
+------------------------------------------------------------------
+
+2 - Seja a seguinte seqüência de instruções em um programa C:
+        int *pti;
+        int veti[]={10,7,2,6,3};
+        pti = veti;
+Qual afirmativa é falsa?
+    	a. 	*pti é igual a 10 
+    	b. 	*(pti+2) é igual a 2 
+    	c. 	pti[4] é igual a 3
+    	d. 	pti[1] é igual a 10 
+    	e. 	*(veti+3) é igual a 6
+-------------------------------------------------------------------
+
+3 -Se i e j são variáveis inteiras e pi e pj são ponteiros para inteiro, qual atribuição é ilegal?
+    	a. 	pi = &i; 
+    	b. 	*pj = &j; 
+    	c. 	pj = &*&j; 
+    	d. 	i = *&*&j; 
+    	e. 	i = (*pi)+++*pj; 
+
+DESAFIO:
+ Troque o endereços de memória de duas variáveis e mostre o resultado
